@@ -6,10 +6,11 @@ from File_writing import writing_txt
 from read_contact import read_contact
 
 
-path = 'Phonebook.csv'
-valid = exists(path)
-if not valid:
-    creating()
+def button():   
+    path = 'Phonebook.csv'
+    valid = exists(path)
+    if not valid:
+        creating()
 
 writing_csv()
 writing_txt()
